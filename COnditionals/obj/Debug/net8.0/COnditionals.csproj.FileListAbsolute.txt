@@ -1,0 +1,15 @@
+P:\learn-c-sharp\COnditionals\bin\Debug\net8.0\COnditionals.exe
+P:\learn-c-sharp\COnditionals\bin\Debug\net8.0\COnditionals.deps.json
+P:\learn-c-sharp\COnditionals\bin\Debug\net8.0\COnditionals.runtimeconfig.json
+P:\learn-c-sharp\COnditionals\bin\Debug\net8.0\COnditionals.dll
+P:\learn-c-sharp\COnditionals\bin\Debug\net8.0\COnditionals.pdb
+P:\learn-c-sharp\COnditionals\obj\Debug\net8.0\COnditionals.GeneratedMSBuildEditorConfig.editorconfig
+P:\learn-c-sharp\COnditionals\obj\Debug\net8.0\COnditionals.AssemblyInfoInputs.cache
+P:\learn-c-sharp\COnditionals\obj\Debug\net8.0\COnditionals.AssemblyInfo.cs
+P:\learn-c-sharp\COnditionals\obj\Debug\net8.0\COnditionals.csproj.CoreCompileInputs.cache
+P:\learn-c-sharp\COnditionals\obj\Debug\net8.0\COnditionals.sourcelink.json
+P:\learn-c-sharp\COnditionals\obj\Debug\net8.0\COnditionals.dll
+P:\learn-c-sharp\COnditionals\obj\Debug\net8.0\refint\COnditionals.dll
+P:\learn-c-sharp\COnditionals\obj\Debug\net8.0\COnditionals.pdb
+P:\learn-c-sharp\COnditionals\obj\Debug\net8.0\COnditionals.genruntimeconfig.cache
+P:\learn-c-sharp\COnditionals\obj\Debug\net8.0\ref\COnditionals.dll
