@@ -1,0 +1,15 @@
+P:\learn-c-sharp\OOP\bin\Debug\net8.0\OOP.exe
+P:\learn-c-sharp\OOP\bin\Debug\net8.0\OOP.deps.json
+P:\learn-c-sharp\OOP\bin\Debug\net8.0\OOP.runtimeconfig.json
+P:\learn-c-sharp\OOP\bin\Debug\net8.0\OOP.dll
+P:\learn-c-sharp\OOP\bin\Debug\net8.0\OOP.pdb
+P:\learn-c-sharp\OOP\obj\Debug\net8.0\OOP.GeneratedMSBuildEditorConfig.editorconfig
+P:\learn-c-sharp\OOP\obj\Debug\net8.0\OOP.AssemblyInfoInputs.cache
+P:\learn-c-sharp\OOP\obj\Debug\net8.0\OOP.AssemblyInfo.cs
+P:\learn-c-sharp\OOP\obj\Debug\net8.0\OOP.csproj.CoreCompileInputs.cache
+P:\learn-c-sharp\OOP\obj\Debug\net8.0\OOP.sourcelink.json
+P:\learn-c-sharp\OOP\obj\Debug\net8.0\OOP.dll
+P:\learn-c-sharp\OOP\obj\Debug\net8.0\refint\OOP.dll
+P:\learn-c-sharp\OOP\obj\Debug\net8.0\OOP.pdb
+P:\learn-c-sharp\OOP\obj\Debug\net8.0\OOP.genruntimeconfig.cache
+P:\learn-c-sharp\OOP\obj\Debug\net8.0\ref\OOP.dll
