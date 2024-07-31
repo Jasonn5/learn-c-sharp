@@ -1,0 +1,15 @@
+P:\learn-c-sharp\Introduction\bin\Debug\net8.0\Introduction.exe
+P:\learn-c-sharp\Introduction\bin\Debug\net8.0\Introduction.deps.json
+P:\learn-c-sharp\Introduction\bin\Debug\net8.0\Introduction.runtimeconfig.json
+P:\learn-c-sharp\Introduction\bin\Debug\net8.0\Introduction.dll
+P:\learn-c-sharp\Introduction\bin\Debug\net8.0\Introduction.pdb
+P:\learn-c-sharp\Introduction\obj\Debug\net8.0\Introduction.GeneratedMSBuildEditorConfig.editorconfig
+P:\learn-c-sharp\Introduction\obj\Debug\net8.0\Introduction.AssemblyInfoInputs.cache
+P:\learn-c-sharp\Introduction\obj\Debug\net8.0\Introduction.AssemblyInfo.cs
+P:\learn-c-sharp\Introduction\obj\Debug\net8.0\Introduction.csproj.CoreCompileInputs.cache
+P:\learn-c-sharp\Introduction\obj\Debug\net8.0\Introduction.sourcelink.json
+P:\learn-c-sharp\Introduction\obj\Debug\net8.0\Introduction.dll
+P:\learn-c-sharp\Introduction\obj\Debug\net8.0\refint\Introduction.dll
+P:\learn-c-sharp\Introduction\obj\Debug\net8.0\Introduction.pdb
+P:\learn-c-sharp\Introduction\obj\Debug\net8.0\Introduction.genruntimeconfig.cache
+P:\learn-c-sharp\Introduction\obj\Debug\net8.0\ref\Introduction.dll
