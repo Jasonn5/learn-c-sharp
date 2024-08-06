@@ -1,13 +1,16 @@
-﻿namespace API
+﻿using DataAccess.Context;
+using Microsoft.EntityFrameworkCore;
+
+namespace API
 {
     public class Startup
     {
         public Startup(IConfiguration configuration)
         {
-            Configuation = configuration;
+            Configuration = configuration;
         }
 
-        public IConfiguration Configuation { get; set; }
+        public IConfiguration Configuration { get; set; }
 
 
         public void ConfigureServices(IServiceCollection services) 
@@ -15,6 +18,11 @@
             services.AddControllers();
             services.AddEndpointsApiExplorer();
             services.AddSwaggerGen();
+
+            services.AddDbContext<APIContext>(options => 
+            {
+                options.UseSqlServer(Configuration.GetConnection("APIDatabase"), b => b.MigrationAssembly("API"));
+            });
 
         }
 

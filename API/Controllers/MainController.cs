@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Entities;
+using Microsoft.AspNetCore.Mvc;
 using System.Security.Principal;
 
 namespace API.Controllers
@@ -7,19 +8,13 @@ namespace API.Controllers
     public class MainController : ControllerBase
     {
         [HttpGet]
-        public ActionResult<Persona> Get() 
+        public ActionResult<Employee> Get() 
         { 
-            Persona persona = new Persona();
-            persona.Name = "Pedro";
-            persona.Age = 30;
+            Employee persona = new Employee();           
             return Ok(persona);
         }
     }
 
 
-    public class Persona 
-    {
-        public string Name { get; set; }
-        public int Age { get; set; }  
-    }
+
 }
