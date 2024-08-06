@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+﻿using Entities;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -8,8 +9,9 @@ using System.Threading.Tasks;
 
 namespace DataAccess.Context
 {
-    public class APIContext : IdentityDbContext
+    public class APIContext : DbContext
     {
+        public DbSet<Employee> Employees { get; set; }
         public APIContext(DbContextOptions<APIContext> options) : base(options) { }
 
         protected override void OnModelCreating(ModelBuilder builder)
