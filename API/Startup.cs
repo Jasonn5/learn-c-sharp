@@ -21,7 +21,7 @@ namespace API
 
             services.AddDbContext<APIContext>(options => 
             {
-                options.UseSqlServer(Configuration.GetConnection("APIDatabase"), b => b.MigrationAssembly("API"));
+                options.UseSqlServer(Configuration.GetConnectionString("APIDatabase"), b => b.MigrationsAssembly("API"));
             });
 
         }
