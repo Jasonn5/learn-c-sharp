@@ -16,6 +16,15 @@ namespace DataAccess.Repositories
         {
             _dbContext = dbContext;
         }
+
+        public Employee Add(Employee employee)
+        {
+            _dbContext.Set<Employee>().Add(employee);
+            _dbContext.SaveChanges();
+
+            return employee;
+        }
+
         public ICollection<Employee> list()
         {
             return _dbContext.Set<Employee>().ToList();

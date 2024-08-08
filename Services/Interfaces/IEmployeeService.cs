@@ -10,5 +10,6 @@ namespace Services.Interfaces
     public interface IEmployeeService
     {
         public ICollection<Employee> List();
+        public Employee Add(Employee employee);
     }
 }

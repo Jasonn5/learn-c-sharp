@@ -11,6 +11,12 @@ namespace Services
         {
             _employeeRepository = employeeRepository;
         }
+
+        public Employee Add(Employee employee)
+        {
+            return _employeeRepository.Add(employee);
+        }
+
         public ICollection<Employee> List()
         {
             return _employeeRepository.list();

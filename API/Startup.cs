@@ -1,5 +1,9 @@
 ﻿using DataAccess.Context;
+using DataAccess.Repositories;
+using DataAccess.Repositories.Interfaces;
 using Microsoft.EntityFrameworkCore;
+using Services;
+using Services.Interfaces;
 
 namespace API
 {
@@ -18,6 +22,7 @@ namespace API
             services.AddControllers();
             services.AddEndpointsApiExplorer();
             services.AddSwaggerGen();
+            RegisterTypes(services);
 
             services.AddDbContext<APIContext>(options => 
             {
@@ -44,6 +49,16 @@ namespace API
                     });
                 });
             }
+        }
+
+        public static void RegisterTypes(IServiceCollection services) 
+        {
+            //Contection beetween EntityFramework and Project Context
+            services.AddTransient<DbContext, APIContext>();
+
+            //Connection for Employee
+            services.AddTransient<IEmployeeService, EmployeeService>();
+            services.AddTransient<IEmployeeRepository, EmployeeRepository>();
         }
     }
 }

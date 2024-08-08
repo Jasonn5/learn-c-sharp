@@ -10,5 +10,6 @@ namespace DataAccess.Repositories.Interfaces
     public interface IEmployeeRepository
     {
         public ICollection<Employee> list();
+        public Employee Add(Employee employee);
     }
 }

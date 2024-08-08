@@ -5,11 +5,11 @@ using System.Security.Principal;
 
 namespace API.Controllers
 {
-    [Route("api/v1/hello_world")]
-    public class MainController : ControllerBase
+    [Route("api/v1/employee")]
+    public class EmployeeController : ControllerBase
     {
         private readonly IEmployeeService _employeeService;
-        public MainController(IEmployeeService employeeService) 
+        public EmployeeController(IEmployeeService employeeService) 
         {
             _employeeService = employeeService;
         }
@@ -20,6 +20,14 @@ namespace API.Controllers
             var persona = _employeeService.List();           
             return Ok(persona);
         }
+
+        [HttpPost]
+        public ActionResult<Employee> Post(Employee employee)
+        {
+            var newEmployee = _employeeService.Add(employee);
+            return Created("Employee Crated",newEmployee);
+        }
+
     }
 
 
