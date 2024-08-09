@@ -12,6 +12,7 @@ namespace DataAccess.Context
     public class APIContext : DbContext
     {
         public DbSet<Employee> Employees { get; set; }
+        public DbSet<Category> Categories { get; set; }
 
         public APIContext(DbContextOptions<APIContext> options) : base(options) { }
 

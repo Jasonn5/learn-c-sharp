@@ -59,6 +59,10 @@ namespace API
             //Connection for Employee
             services.AddTransient<IEmployeeService, EmployeeService>();
             services.AddTransient<IEmployeeRepository, EmployeeRepository>();
+
+            //Connection for Categories
+            services.AddTransient<ICategoryRepository, CategoryRepository>();
+            services.AddTransient<ICategoryServive, CategoryService>();
         }
     }
 }

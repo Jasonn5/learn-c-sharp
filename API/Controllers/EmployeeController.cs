@@ -22,50 +22,50 @@ namespace API.Controllers
         }
 
         [HttpPost]
-        public ActionResult<Employee> Post(Employee employee)
+        public ActionResult<Employee> Post([FromBody]Employee employee)
         {
             var newEmployee = _employeeService.Add(employee);
             return Created("Employee Crated", newEmployee);
         }
 
-        //[HttpGet]
-        //[Route("{id}")]
-        //public ActionResult<Employee> Get(int id)
-        //{
-        //    return Ok(_employeeService.FindById(id));
-        //}
+        [HttpGet]
+        [Route("{id}")]
+        public ActionResult<Employee> Get(int id)
+        {
+            return Ok(_employeeService.FindById(id));
+        }
 
 
-        //[HttpPatch]
-        //[Route("{id}")]
-        //public ActionResult<Employee> Update(Employee employee)
-        //{
-        //    if (!ModelState.IsValid)
-        //    {
-        //        var errors = string.Join("\n", ModelState.Values.SelectMany(e => e.Errors.Select(er => er.ErrorMessage)).ToArray());
+        [HttpPatch]
+        [Route("")]
+        public ActionResult<Employee> Update(Employee employee)
+        {
+            if (!ModelState.IsValid)
+            {
+                var errors = string.Join("\n", ModelState.Values.SelectMany(e => e.Errors.Select(er => er.ErrorMessage)).ToArray());
 
-        //        return BadRequest(errors);
-        //    }
+                return BadRequest(errors);
+            }
 
-        //    _employeeService.Update(employee);
+            _employeeService.Update(employee);
 
-        //    return Ok(employee);
-        //}
+            return Ok(employee);
+        }
 
-        //[HttpDelete("{id}")]
-        //public ActionResult Delete(int id)
-        //{
-        //    try
-        //    {
-        //        _employeeService.Delete(id);
+        [HttpDelete("{id}")]
+        public ActionResult Delete(int id)
+        {
+            try
+            {
+                _employeeService.Delete(id);
 
-        //        return Ok();
-        //    }
-        //    catch (Exception exception)
-        //    {
-        //        throw new ApplicationException("El empleado no puede ser eliminada", exception);
-        //    }
-        //}
+                return Ok();
+            }
+            catch (Exception exception)
+            {
+                throw new ApplicationException("El empleado no puede ser eliminado", exception);
+            }
+        }
 
     }
 
