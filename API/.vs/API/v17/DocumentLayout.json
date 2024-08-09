@@ -3,11 +3,10 @@
   "WorkspaceRootPath": "P:\\learn-c-sharp\\API\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7FA97C4F-CBFD-4AD2-8A0E-517E9978FFC0}|API.csproj|p:\\learn-c-sharp\\api\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7FA97C4F-CBFD-4AD2-8A0E-517E9978FFC0}|API.csproj|solutionrelative:controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8EFCADAA-AC64-4DAC-B532-0E049B76985E}|..\\DataAccess\\DataAccess.csproj|p:\\learn-c-sharp\\dataaccess\\repositories\\employeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8EFCADAA-AC64-4DAC-B532-0E049B76985E}|..\\DataAccess\\DataAccess.csproj|p:\\learn-c-sharp\\dataaccess\\context\\apicontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8EFCADAA-AC64-4DAC-B532-0E049B76985E}|..\\DataAccess\\DataAccess.csproj|p:\\learn-c-sharp\\dataaccess\\repositories\\interfaces\\iemployeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B86507E0-6DA1-4C17-8F2B-D2014AC34DCE}|..\\Services\\Services.csproj|p:\\learn-c-sharp\\services\\employeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -16,10 +15,14 @@
       "AbsoluteMoniker": "D:0:0:{B86507E0-6DA1-4C17-8F2B-D2014AC34DCE}|..\\Services\\Services.csproj|p:\\learn-c-sharp\\services\\interfaces\\iemployeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8EFCADAA-AC64-4DAC-B532-0E049B76985E}|..\\DataAccess\\DataAccess.csproj|p:\\learn-c-sharp\\dataaccess\\repositories\\employeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7FA97C4F-CBFD-4AD2-8A0E-517E9978FFC0}|API.csproj|p:\\learn-c-sharp\\api\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FA97C4F-CBFD-4AD2-8A0E-517E9978FFC0}|API.csproj|solutionrelative:controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8EFCADAA-AC64-4DAC-B532-0E049B76985E}|..\\DataAccess\\DataAccess.csproj|p:\\learn-c-sharp\\dataaccess\\repositories\\interfaces\\iemployeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5097218F-FF74-4CEF-8762-E1E0858E4082}|..\\Entities\\Entities.csproj|p:\\learn-c-sharp\\entities\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8EFCADAA-AC64-4DAC-B532-0E049B76985E}|..\\DataAccess\\DataAccess.csproj|p:\\learn-c-sharp\\dataaccess\\context\\apicontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7FA97C4F-CBFD-4AD2-8A0E-517E9978FFC0}|API.csproj|p:\\learn-c-sharp\\api\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -48,9 +51,6 @@
       "RelativeMoniker": "D:0:0:{7FA97C4F-CBFD-4AD2-8A0E-517E9978FFC0}|API.csproj|solutionrelative:migrations\\20240807130301_api.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5097218F-FF74-4CEF-8762-E1E0858E4082}|..\\Entities\\Entities.csproj|p:\\learn-c-sharp\\entities\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{7FA97C4F-CBFD-4AD2-8A0E-517E9978FFC0}|API.csproj|p:\\learn-c-sharp\\api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{7FA97C4F-CBFD-4AD2-8A0E-517E9978FFC0}|API.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
@@ -77,46 +77,85 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "IEmployeeService.cs",
-              "DocumentMoniker": "P:\\learn-c-sharp\\Services\\Interfaces\\IEmployeeService.cs",
-              "RelativeDocumentMoniker": "..\\Services\\Interfaces\\IEmployeeService.cs",
-              "ToolTip": "P:\\learn-c-sharp\\Services\\Interfaces\\IEmployeeService.cs",
-              "RelativeToolTip": "..\\Services\\Interfaces\\IEmployeeService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAvAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-02T12:57:51.945Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
               "Title": "EmployeeService.cs",
               "DocumentMoniker": "P:\\learn-c-sharp\\Services\\EmployeeService.cs",
               "RelativeDocumentMoniker": "..\\Services\\EmployeeService.cs",
               "ToolTip": "P:\\learn-c-sharp\\Services\\EmployeeService.cs",
               "RelativeToolTip": "..\\Services\\EmployeeService.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA4AAAAtAAAA",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAQwBsAAAALAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-02T12:44:45.636Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "EmployeeController.cs",
               "DocumentMoniker": "P:\\learn-c-sharp\\API\\Controllers\\EmployeeController.cs",
               "RelativeDocumentMoniker": "Controllers\\EmployeeController.cs",
               "ToolTip": "P:\\learn-c-sharp\\API\\Controllers\\EmployeeController.cs",
               "RelativeToolTip": "Controllers\\EmployeeController.cs",
-              "ViewState": "AQIAAA4AAAAAAAAAAAAiwBkAAAAIAAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAEMAAAALAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-01T13:19:39.958Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EmployeeRepository.cs",
+              "DocumentMoniker": "P:\\learn-c-sharp\\DataAccess\\Repositories\\EmployeeRepository.cs",
+              "RelativeDocumentMoniker": "..\\DataAccess\\Repositories\\EmployeeRepository.cs",
+              "ToolTip": "P:\\learn-c-sharp\\DataAccess\\Repositories\\EmployeeRepository.cs",
+              "RelativeToolTip": "..\\DataAccess\\Repositories\\EmployeeRepository.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAuwCQAAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-07T13:16:22.618Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "IEmployeeRepository.cs",
+              "DocumentMoniker": "P:\\learn-c-sharp\\DataAccess\\Repositories\\Interfaces\\IEmployeeRepository.cs",
+              "RelativeDocumentMoniker": "..\\DataAccess\\Repositories\\Interfaces\\IEmployeeRepository.cs",
+              "ToolTip": "P:\\learn-c-sharp\\DataAccess\\Repositories\\Interfaces\\IEmployeeRepository.cs",
+              "RelativeToolTip": "..\\DataAccess\\Repositories\\Interfaces\\IEmployeeRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-07T13:13:59.825Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Employee.cs",
+              "DocumentMoniker": "P:\\learn-c-sharp\\Entities\\Employee.cs",
+              "RelativeDocumentMoniker": "..\\Entities\\Employee.cs",
+              "ToolTip": "P:\\learn-c-sharp\\Entities\\Employee.cs",
+              "RelativeToolTip": "..\\Entities\\Employee.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAUwBEAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-02T12:46:29.696Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IEmployeeService.cs",
+              "DocumentMoniker": "P:\\learn-c-sharp\\Services\\Interfaces\\IEmployeeService.cs",
+              "RelativeDocumentMoniker": "..\\Services\\Interfaces\\IEmployeeService.cs",
+              "ToolTip": "P:\\learn-c-sharp\\Services\\Interfaces\\IEmployeeService.cs",
+              "RelativeToolTip": "..\\Services\\Interfaces\\IEmployeeService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-02T12:57:51.945Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "APIContext.cs",
               "DocumentMoniker": "P:\\learn-c-sharp\\DataAccess\\Context\\APIContext.cs",
               "RelativeDocumentMoniker": "..\\DataAccess\\Context\\APIContext.cs",
@@ -124,38 +163,11 @@
               "RelativeToolTip": "..\\DataAccess\\Context\\APIContext.cs",
               "ViewState": "AQIAABEAAAAAAAAAAAA3wBgAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-02T13:46:27.509Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-02T13:46:27.509Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "EmployeeRepository.cs",
-              "DocumentMoniker": "P:\\learn-c-sharp\\DataAccess\\Repositories\\EmployeeRepository.cs",
-              "RelativeDocumentMoniker": "..\\DataAccess\\Repositories\\EmployeeRepository.cs",
-              "ToolTip": "P:\\learn-c-sharp\\DataAccess\\Repositories\\EmployeeRepository.cs",
-              "RelativeToolTip": "..\\DataAccess\\Repositories\\EmployeeRepository.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAxwBcAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-07T13:16:22.618Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "IEmployeeRepository.cs",
-              "DocumentMoniker": "P:\\learn-c-sharp\\DataAccess\\Repositories\\Interfaces\\IEmployeeRepository.cs",
-              "RelativeDocumentMoniker": "..\\DataAccess\\Repositories\\Interfaces\\IEmployeeRepository.cs",
-              "ToolTip": "P:\\learn-c-sharp\\DataAccess\\Repositories\\Interfaces\\IEmployeeRepository.cs",
-              "RelativeToolTip": "..\\DataAccess\\Repositories\\Interfaces\\IEmployeeRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAvAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-07T13:13:59.825Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "Startup.cs",
               "DocumentMoniker": "P:\\learn-c-sharp\\API\\Startup.cs",
               "RelativeDocumentMoniker": "Startup.cs",
@@ -163,12 +175,11 @@
               "RelativeToolTip": "Startup.cs",
               "ViewState": "AQIAAC4AAAAAAAAAAAAiwBgAAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-01T13:29:04.78Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-01T13:29:04.78Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "Program.cs",
               "DocumentMoniker": "P:\\learn-c-sharp\\API\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -180,7 +191,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "API.csproj",
               "DocumentMoniker": "P:\\learn-c-sharp\\API\\API.csproj",
               "RelativeDocumentMoniker": "API.csproj",
@@ -192,7 +203,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "API.http",
               "DocumentMoniker": "P:\\learn-c-sharp\\API\\API.http",
               "RelativeDocumentMoniker": "API.http",
@@ -204,7 +215,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "Services.csproj",
               "DocumentMoniker": "P:\\learn-c-sharp\\Services\\Services.csproj",
               "RelativeDocumentMoniker": "..\\Services\\Services.csproj",
@@ -216,7 +227,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "DataAccess.csproj",
               "DocumentMoniker": "P:\\learn-c-sharp\\DataAccess\\DataAccess.csproj",
               "RelativeDocumentMoniker": "..\\DataAccess\\DataAccess.csproj",
@@ -228,7 +239,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "20240807130301_API.cs",
               "DocumentMoniker": "P:\\learn-c-sharp\\API\\Migrations\\20240807130301_API.cs",
               "RelativeDocumentMoniker": "Migrations\\20240807130301_API.cs",
@@ -249,18 +260,6 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAABCAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2024-08-01T13:14:47.42Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Employee.cs",
-              "DocumentMoniker": "P:\\learn-c-sharp\\Entities\\Employee.cs",
-              "RelativeDocumentMoniker": "..\\Entities\\Employee.cs",
-              "ToolTip": "P:\\learn-c-sharp\\Entities\\Employee.cs",
-              "RelativeToolTip": "..\\Entities\\Employee.cs",
-              "ViewState": "AQIAAAcAAAAAAAAAAAAUwAwAAAAjAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-02T12:46:29.696Z"
             },
             {
               "$type": "Document",

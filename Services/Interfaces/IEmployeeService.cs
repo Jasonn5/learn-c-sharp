@@ -11,5 +11,8 @@ namespace Services.Interfaces
     {
         public ICollection<Employee> List();
         public Employee Add(Employee employee);
+        //public void Update(Employee employee);
+        //public Employee FindById(int id);
+        //public void Delete(int id);
     }
 }

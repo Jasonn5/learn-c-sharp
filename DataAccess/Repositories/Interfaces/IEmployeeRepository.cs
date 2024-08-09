@@ -11,5 +11,8 @@ namespace DataAccess.Repositories.Interfaces
     {
         public ICollection<Employee> list();
         public Employee Add(Employee employee);
+        //public void Update(Employee employee);
+        //public Employee FindById(int id);
+        //public void Delete(Employee employee);
     }
 }

@@ -10,6 +10,7 @@ namespace Entities
     public class Employee
     {
         [Key]
+        [Required]
         public int Id { get; set; }
         public string Name { get; set; }
         public string LastName { get; set; }

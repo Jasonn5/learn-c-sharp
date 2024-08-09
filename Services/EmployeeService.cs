@@ -17,9 +17,36 @@ namespace Services
             return _employeeRepository.Add(employee);
         }
 
+        //public void Delete(int id)
+        //{
+        //    var employee = _employeeRepository.FindById(id);
+
+        //    if (employee != null)
+        //    {
+        //        _employeeRepository.Delete(employee);
+        //    }
+        //}
+
+        //public Employee FindById(int id)
+        //{
+        //    var employee = _employeeRepository.FindById(id);
+
+        //    return employee;
+        //}
+
         public ICollection<Employee> List()
         {
             return _employeeRepository.list();
         }
+
+        //public void Update(Employee employee)
+        //{
+        //    var result = _employeeRepository.FindById(employee.Id);
+
+        //    if (result != null)
+        //    {
+        //        _employeeRepository.Update(employee);
+        //    }
+        //}
     }
 }
