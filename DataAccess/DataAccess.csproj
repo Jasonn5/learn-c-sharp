@@ -12,6 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Authentication\Authentication.csproj" />
     <ProjectReference Include="..\Entities\Entities.csproj" />
   </ItemGroup>
 

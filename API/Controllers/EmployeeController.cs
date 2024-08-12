@@ -38,7 +38,7 @@ namespace API.Controllers
 
         [HttpPatch]
         [Route("")]
-        public ActionResult<Employee> Update(Employee employee)
+        public ActionResult<Employee> Update([FromBody] Employee employee)
         {
             if (!ModelState.IsValid)
             {

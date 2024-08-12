@@ -24,6 +24,12 @@ namespace API.Controllers
         [HttpPost]
         public ActionResult<Category> Post([FromBody] Category category)
         {
+            if (!ModelState.IsValid)
+            {
+                var errors = string.Join("\n", ModelState.Values.SelectMany(e => e.Errors.Select(er => er.ErrorMessage)).ToArray());
+
+                return BadRequest(errors);
+            }
             var newCategory= _categoryServive.Add(category);
             return Created("Category Crated", newCategory);
         }
@@ -38,7 +44,7 @@ namespace API.Controllers
 
         [HttpPatch]
         [Route("")]
-        public ActionResult<Category> Update(Category category)
+        public ActionResult<Category> Update([FromBody] Category category)
         {
             if (!ModelState.IsValid)
             {

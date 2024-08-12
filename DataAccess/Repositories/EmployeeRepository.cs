@@ -1,5 +1,6 @@
 ﻿using DataAccess.Repositories.Interfaces;
 using Entities;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -11,8 +12,8 @@ namespace DataAccess.Repositories
 {
     public class EmployeeRepository : IEmployeeRepository
     {
-        private readonly DbContext _dbContext;
-        public EmployeeRepository(DbContext dbContext)
+        private readonly IdentityDbContext _dbContext;
+        public EmployeeRepository(IdentityDbContext dbContext)
         {
             _dbContext = dbContext;
         }
